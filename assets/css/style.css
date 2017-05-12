@@ -1,12 +1,11 @@
 /*--------------------------------------- MAIN ---------------------------------------*/
 
 html {
-	margin: 0;
-	height: 100%;
-	background: 
-		linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9)),
-		url(../images/eiffel_tower.jpg);
+	background-image: url(../images/eiffel_tower.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
 body {
@@ -19,6 +18,16 @@ body {
 	height: 40px;
 	margin: -40px 0 0;
 }
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: grey;
+}
+
 /*--------------------------------------- NAVIGATION ---------------------------------------*/
 nav {
 	background-color: #333;
@@ -48,23 +57,28 @@ nav ul li a {
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
-	text-decoration: none;
 }
 
 nav ul li a:hover {
 	background-color: grey;
 }
 
+/*--------------------------------------- HOME PAGE ---------------------------------------*/
 .container {
-	width: 1200px;
-	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container h1 {
 	text-align: center;
 	color: white;
 	font-size: 5em;
-	margin-top: 40%;
 }
 
 /*--------------------------------------- ITINERARY ---------------------------------------*/
