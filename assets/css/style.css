@@ -13,7 +13,12 @@ body {
 	margin: 0;
 }
 
-
+:target:before {
+	content: "";
+	display: block;
+	height: 40px;
+	margin: -40px 0 0;
+}
 /*--------------------------------------- NAVIGATION ---------------------------------------*/
 nav {
 	background-color: #333;
@@ -80,16 +85,6 @@ nav ul li a:hover {
 	position: fixed;
 }
 
-/*.timeline {
-	position: fixed;
-	top: 40px;
-	width: 250px;
-	height: 100vh;
-	left: auto;
-	background-color: #333;
-}
-*/
-
 .timeline a {
 	color: white;
 	text-decoration: none;
@@ -99,11 +94,3 @@ nav ul li a:hover {
 	background-color: grey;
 }
 
-/*
-.itinerary {
-	width: 1200px;
-	margin: 0 auto;
-	margin-top: 40px;
-	margin-left: 250px;
-}
-*/
