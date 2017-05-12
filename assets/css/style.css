@@ -62,4 +62,48 @@ nav ul li a:hover {
 	margin-top: 40%;
 }
 
-/*--------------------------------------- DAY 1 ---------------------------------------*/
+/*--------------------------------------- ITINERARY ---------------------------------------*/
+.wrapper {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	text-align: center;
+
+}
+
+.timeline {
+	background-color: #333;
+	text-align: left;
+}
+
+.timelinenav {
+	position: fixed;
+}
+
+/*.timeline {
+	position: fixed;
+	top: 40px;
+	width: 250px;
+	height: 100vh;
+	left: auto;
+	background-color: #333;
+}
+*/
+
+.timeline a {
+	color: white;
+	text-decoration: none;
+}
+
+.timeline a:hover {
+	background-color: grey;
+}
+
+/*
+.itinerary {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-left: 250px;
+}
+*/

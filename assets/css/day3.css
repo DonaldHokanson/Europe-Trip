@@ -1,8 +1,8 @@
 html {
-	background: none;
-	background: linear-gradient(grey,#333);
+	background: #ccc;
 }
 
+
 .container {
-	margin-top: 55px;
+	margin-top: 65px;
 }
