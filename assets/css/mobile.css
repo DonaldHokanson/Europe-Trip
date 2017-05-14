@@ -32,23 +32,9 @@ nav .burger i{
 	padding: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .wrapper {
 	grid-template-columns: 1fr;
+	margin-top: 95px;
 }
 
 .timeline {
