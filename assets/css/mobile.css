@@ -18,6 +18,34 @@ p {
 	font-size: 2em;
 }
 
+/*----------------------------------- NAVIGATION -----------------------------------*/
+nav .desktop {
+	display: none;
+}
+
+nav .burger {
+	display: contents;
+}
+
+nav .burger i{
+	color: white;
+	padding: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .wrapper {
 	grid-template-columns: 1fr;
