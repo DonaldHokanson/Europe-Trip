@@ -24,12 +24,12 @@ nav .desktop {
 }
 
 nav .burger {
-	display: contents;
+	display: block;
 }
 
 nav .burger i{
 	color: white;
-	padding: .5em;
+	padding: 15px;
 }
 
 

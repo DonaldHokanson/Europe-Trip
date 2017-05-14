@@ -26,6 +26,10 @@ a {
 
 
 /*--------------------------------------- NAVIGATION ---------------------------------------*/
+nav .burger {
+	display: none;
+}
+
 nav {
 	background-color: #333;
 	position: fixed;
