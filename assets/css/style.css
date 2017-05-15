@@ -12,6 +12,7 @@ body {
 	margin: 0;
 }
 
+
 :target:before {
 	content: "";
 	display: block;
@@ -30,6 +31,7 @@ nav .burger {
 	display: none;
 }
 
+/*----- old navigation 
 nav {
 	background-color: #333;
 	position: fixed;
@@ -50,7 +52,7 @@ nav ul {
 	height: 40px;
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: 2fr repeat(7, [col] 1fr);
+	grid-template-columns: 2fr repeat(2, [col] 1fr);
 	align-content: center;
 }
 
@@ -60,11 +62,96 @@ nav ul li a {
 	padding: 14px 16px;
 }
 
+nav ul.drop-menu li {
+	display: none;
+}
+
+li:hover > ul.drop-menu li {
+	display: block;
+}
+
 nav ul li a:hover {
 	background-color: grey;
 }
+-----*/
+
+/* ---- new navigation ---- */
+nav {
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: auto;
+	width: 100%;
+	box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.5)
+}
+
+nav a {
+	color: white;
+	display: block;
+}
+
+nav > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #333;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	align-content: center;
+}
+
+nav > ul > li {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	color: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+}
+
+nav > ul > li:hover {
+	background: #d5d5d5;
+}
+
+ul.drop-menu {
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	width: 100%;
+	padding: 0;
+}
+
+ul.drop-menu li {
+	background: #666;
+	height: 40px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+ul.drop-menu li:hover {
+	background: #606060;
+}
+
+ul.drop-menu li a:last-child {
+	border-radius: 0px 0px 5px 5px;
+}
+
+ul.drop-menu li {
+	display: none;
+}
+
+li:hover > ul.drop-menu li {
+	display: block;
+}
+
+
+
+
+
 
 /*--------------------------------------- HOME PAGE ---------------------------------------*/
+
+
 .container {
 	position: absolute;
 	top: 0;
@@ -83,6 +170,8 @@ nav ul li a:hover {
 }
 
 /*--------------------------------------- ITINERARY ---------------------------------------*/
+
+
 .wrapper {
 	margin-top: 40px;
 	display: grid;
