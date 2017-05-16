@@ -125,7 +125,9 @@ li:hover > ul.drop-menu li {
 }
 
 /*--------------------------------------- ITINERARY ---------------------------------------*/
-
+hr {
+	margin: 0;
+}
 
 .wrapper {
 	margin-top: 40px;
@@ -135,6 +137,7 @@ li:hover > ul.drop-menu li {
 
 }
 
+/*----- .timeline -----*/
 .timeline {
 	background-color: #333;
 	text-align: left;
@@ -155,3 +158,21 @@ li:hover > ul.drop-menu li {
 
 
 
+
+
+/*----- .activity -----*/
+.activity:nth-of-type(even) {
+	background: #aaa;
+}
+
+.activity h1 {
+	margin: 0;
+	padding: 1em;
+}
+
+.activity p  {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
